@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes | GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/recipes.css">
+</head>
+<body class="recipes-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./recipes.html" class="nav-link active">Recipes</a>
+                <a href="./calculator.html" class="nav-link">Calculator</a>
+                <a href="./workout.html" class="nav-link">Workout</a>
+                <a href="./mindfullness.html" class="nav-link">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="recipes-header">
+        <div class="container1">
+            <h1>Healthy Recipes</h1>
+            <p>Discover delicious and nutritious meals for every occasion</p>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-container">
+        <div class="container">
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" id="recipe-search" placeholder="Search recipes...">
+                </div>
+                <select id="category-filter" class="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <section class="recipes-content">
+        <div class="container">
+            <div class="recipes-grid" id="recipes-container">
+                <!-- Recipes will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div class="modal" id="recipe-modal">
+        <div class="modal-content">
+            <!-- Modal content will be loaded dynamically -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GreenBite</h3>
+                    <p>Energetic Nutrition. Empowered Living.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./calculator.html">Calculator</a></li>
+                        <li><a href="./workout.html">Workout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="./mindfullness.html">Mindfulness</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="facebook.png"></a>
+                        <a href="#" aria-label="Instagram"><img src="instagram.png"></a>
+                        <a href="#" aria-label="Twitter"><img src="twitter.png"></a>
+                        <a href="#" aria-label="YouTube"><img src="youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenBite Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./recieps.js"></script>
+</body>
+</html>

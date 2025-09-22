@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Generator | GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body class="workout-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-logo">GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./recipes.html" class="nav-link">Recipes</a>
+                <a href="./calculator.html" class="nav-link">Calculator</a>
+                <a href="./workout.html" class="nav-link active">Workout</a>
+                <a href="./mindfullness.html" class="nav-link">Mindfulness</a>
+                <a href="./calculator.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="workout-header">
+        <div class="container">
+            <h1 style="color: black;">Workout Generator</h1>
+            <p style="color: black;">Create personalized workouts based on your preferences and available equipment</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Workout Options -->
+            <div class="workout-options">
+                <div class="form-group">
+                    <label for="body-part" class="form-label">Target Area</label>
+                    <select id="body-part" class="form-select">
+                        <option value="full">Full Body</option>
+                        <option value="arms">Arms</option>
+                        <option value="legs">Legs</option>
+                        <option value="core">Core</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="equipment" class="form-label">Equipment</label>
+                    <select id="equipment" class="form-select">
+                        <option value="none">No Equipment</option>
+                        <option value="dumbbells">Dumbbells</option>
+                        <option value="resistance">Resistance Bands</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">&nbsp;</label>
+                    <button id="generate-workout" class="btn btn-primary">Generate Workout</button>
+                </div>
+            </div>
+
+            <!-- Generated Workout -->
+            <div class="workout-results">
+                <h2 style="color: white;">Your Custom Workout</h2>
+                <div class="workout-container" id="workout-container">
+                    <p class="no-workout" style="color: white;">Select your preferences and click "Generate Workout" to get started.</p>
+                </div>
+            </div>
+
+            <!-- Workout Tips -->
+            <div class="workout-tips">
+                <h2>Workout Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>Warm Up</h3>
+                        <p>Always start with 5-10 minutes of light cardio to prepare your muscles.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Proper Form</h3>
+                        <p>Focus on maintaining proper form rather than lifting heavier weights.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Stay Hydrated</h3>
+                        <p>Drink water before, during, and after your workout.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Rest Days</h3>
+                        <p>Allow your muscles time to recover with at least 1-2 rest days per week.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Modal -->
+    <div class="modal" id="exercise-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-exercise-name">Exercise Name</h2>
+            <div class="exercise-description" id="modal-exercise-description"></div>
+            <div class="timer-display" id="modal-timer">00:30</div>
+            <div class="timer-controls">
+                <button id="start-timer" class="btn btn-primary">Start</button>
+                <button id="pause-timer" class="btn btn-secondary">Pause</button>
+                <button id="reset-timer" class="btn btn-secondary">Reset</button>
+                <button id="close-timer" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GreenBite</h3>
+                    <p>Energetic Nutrition. Empowered Living.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./calculator.html">Calculator</a></li>
+                        <li><a href="./workout.html">Workout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="./mindfullness.html">Mindfulness</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="facebook.png"></a>
+                        <a href="#" aria-label="Instagram"><img src="instagram.png"></a>
+                        <a href="#" aria-label="Twitter"><img src="twitter.png"></a>
+                        <a href="#" aria-label="YouTube"><img src="youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenBite Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

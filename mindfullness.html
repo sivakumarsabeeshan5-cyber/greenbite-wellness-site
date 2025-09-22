@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness | GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body class="mindfulness-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-logo">GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./recipes.html" class="nav-link">Recipes</a>
+                <a href="./calculator.html" class="nav-link">Calculator</a>
+                <a href="./workout.html" class="nav-link">Workout</a>
+                <a href="./mindfullness.html" class="nav-link active">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="mindfullness-header">
+        <div class="container">
+            <h1 style="color: rgb(0, 0, 0);">Mindfulness & Meditation</h1>
+            <p style="color: rgb(0, 0, 0);">Find your inner peace with guided breathing exercises and meditation tools</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Breathing Exercise -->
+            <div class="mindfulness-section">
+                <h2>Guided Breathing Exercise</h2>
+                <p>Follow the rhythm to practice deep breathing. Inhale as the circle expands, exhale as it contracts.</p>
+                
+                <div class="breathing-container">
+                    <div class="breathing-circle" id="breathing-circle">
+                        <span>Breathe</span>
+                    </div>
+                    
+                    <div class="breathing-controls">
+                        <button id="start-breathing" class="btn btn-primary">Start Breathing Exercise</button>
+                        <p style="font-weight: bolder;" class="breathing-instruction" id="breathing-instruction">Press start to begin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meditation Timer -->
+            <div class="mindfulness-section">
+                <h2>Meditation Timer</h2>
+                <p>Set a timer for your meditation session. Track your progress over time.</p>
+                
+                <div class="meditation-timer">
+                    <div class="timer-display" id="meditation-time">05:00</div>
+                    <div class="timer-controls">
+                        <button id="start-meditation" class="btn btn-primary">Start Meditation</button>
+                        <button id="reset-meditation" class="btn btn-secondary">Reset</button>
+                    </div>
+                    
+                    <div class="session-tracker">
+                        <p>You've completed <span id="session-count">0</span> sessions this week</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ambient Sounds -->
+            <div class="mindfulness-section">
+                <h2>Ambient Sounds</h2>
+                <p>Select a sound to enhance your meditation experience.</p>
+                
+                <div class="ambient-sounds">
+                    <button class="sound-btn" data-sound="rain">
+                        <span>🌧️</span>
+                        <span>Rain</span>
+                    </button>
+                    <button class="sound-btn" data-sound="forest">
+                        <span>🌲</span>
+                        <span>Forest</span>
+                    </button>
+                    <button class="sound-btn" data-sound="ocean">
+                        <span>🌊</span>
+                        <span>Ocean</span>
+                    </button>
+                    <button class="sound-btn" data-sound="white-noise">
+                        <span>📻</span>
+                        <span>White Noise</span>
+                    </button>
+                </div>
+                
+                <div class="volume-control">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <!-- Mindfulness Tips -->
+            <div class="mindfulness-section">
+                <h2>Mindfulness Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>Start Small</h3>
+                        <p>Begin with just 5 minutes of meditation daily and gradually increase the duration.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Focus on Breath</h3>
+                        <p>When your mind wanders, gently bring your attention back to your breathing.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Consistency Matters</h3>
+                        <p>Regular short sessions are more effective than occasional long ones.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Be Kind to Yourself</h3>
+                        <p>Don't judge your meditation practice. Some days will be easier than others.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GreenBite</h3>
+                    <p>Energetic Nutrition. Empowered Living.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./calculator.html">Calculator</a></li>
+                        <li><a href="./workout.html">Workout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="./mindfullness.html">Mindfulness</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="facebook.png"></a>
+                        <a href="#" aria-label="Instagram"><img src="instagram.png"></a>
+                        <a href="#" aria-label="Twitter"><img src="twitter.png"></a>
+                        <a href="#" aria-label="YouTube"><img src="youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenBite Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
